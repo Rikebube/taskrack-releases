@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F3A75"/><stop offset="1" stop-color="#0F1F47"/></linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E2CBA2"/><stop offset="0.55" stop-color="#B08D57"/><stop offset="1" stop-color="#8C6E40"/></linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.3" r="0.8"><stop offset="0" stop-color="#B08D57" stop-opacity="0.18"/><stop offset="1" stop-color="#B08D57" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="228" fill="url(#glow)"/>
+  <rect x="10" y="10" width="1004" height="1004" rx="218" fill="none" stroke="#CBB089" stroke-opacity="0.45" stroke-width="6"/>  <!-- T-Raf: üst çubuk onaylı ana görev, gövde üst üste dizilmiş alt görevler -->
+  <rect x="212" y="226" width="600" height="150" rx="58" fill="url(#brass)"/>
+  <path d="M458 302 L496 340 L572 264" fill="none" stroke="#0F1F47" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="432" y="408" width="160" height="112" rx="42" fill="#CBB089" fill-opacity="0.9"/>
+  <rect x="432" y="544" width="160" height="112" rx="42" fill="#9C7C4A"/>
+  <rect x="444" y="692" width="136" height="88" rx="34" fill="none" stroke="#CBB089" stroke-width="24" stroke-opacity="0.85"/></svg>

@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/taskrack-releases/taskrack-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <link rel="manifest" href="/taskrack-releases/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/taskrack-releases/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="TaskRack" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#0B1220" />
+    <title>TaskRack</title>
+    <!-- Tema ilk çizimden önce uygulanır: açılışta beyaz parlama ve iPhone'da ekran kenarlarında açık bant olmaz. -->
+    <style>html{background:#f7f5f0}html.dark{background:#0b1220}</style>
+    <script>
+      (function () {
+        var dark = true;
+        try {
+          var saved = JSON.parse(localStorage.getItem("taskrack-settings") || "{}");
+          dark = !(saved.state && saved.state.theme === "light");
+        } catch (e) {}
+        document.documentElement.classList.toggle("dark", dark);
+        if (!dark) document.querySelector('meta[name="theme-color"]').setAttribute("content", "#f7f5f0");
+      })();
+    </script>
+    <script type="module" crossorigin src="/taskrack-releases/assets/index-Dxf5WKcr.js"></script>
+    <link rel="stylesheet" crossorigin href="/taskrack-releases/assets/index-DuXpvbLO.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
