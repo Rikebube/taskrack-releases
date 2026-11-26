@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/taskrack-releases/taskrack-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <link rel="manifest" href="/taskrack-releases/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/taskrack-releases/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="TaskRack" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#0d0e12" />
+    <title>TaskRack</title>
+    <!-- Tema ilk çizimden önce uygulanır: açılışta beyaz parlama ve iPhone'da ekran kenarlarında açık bant olmaz. -->
+    <style>html{background:#fbfbfa}html.dark{background:#0d0e12}</style>
+    <script>
+      (function () {
+        // Kayıtlı tema yoksa cihazın ayarı (settingsStore ile aynı kural)
+        var dark = !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        try {
+          var saved = JSON.parse(localStorage.getItem("taskrack-settings") || "{}");
+          if (saved.state && (saved.state.theme === "light" || saved.state.theme === "dark")) dark = saved.state.theme === "dark";
+        } catch (e) {}
+        document.documentElement.classList.toggle("dark", dark);
+        if (!dark) document.querySelector('meta[name="theme-color"]').setAttribute("content", "#fbfbfa");
+      })();
+    </script>
+    <script type="module" crossorigin src="/taskrack-releases/assets/index-BGlxLdbQ.js"></script>
+    <link rel="modulepreload" crossorigin href="/taskrack-releases/assets/rolldown-runtime-XKyaHtl9.js">
+    <link rel="modulepreload" crossorigin href="/taskrack-releases/assets/jsx-runtime-COJRAs98.js">
+    <link rel="modulepreload" crossorigin href="/taskrack-releases/assets/settingsStore-CW5Jw_K_.js">
+    <link rel="modulepreload" crossorigin href="/taskrack-releases/assets/preload-helper-BwuZSUyv.js">
+    <link rel="modulepreload" crossorigin href="/taskrack-releases/assets/i18n-BOVV1QgF.js">
+    <link rel="modulepreload" crossorigin href="/taskrack-releases/assets/platform-CsCWuNGf.js">
+    <link rel="modulepreload" crossorigin href="/taskrack-releases/assets/supabase-DYSYfO8X.js">
+    <link rel="stylesheet" crossorigin href="/taskrack-releases/assets/index-Ck5ongyL.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

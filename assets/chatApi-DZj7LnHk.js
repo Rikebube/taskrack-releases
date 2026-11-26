@@ -1,0 +1,1 @@
+import{a as e}from"./supabase-DYSYfO8X.js";var t=(e,t)=>e<t?`dm:${e}:${t}`:`dm:${t}:${e}`;async function n(n,r,i,a){let{error:o}=await e.rpc(`send_team_message`,{p_team:n,p_channel:t(r,i),p_body:a.trim().slice(0,2e3),p_task:null,p_mentions:[],p_attachment:null});return o?o.message:null}export{n,t};

@@ -1,0 +1,1 @@
+import{k as e}from"./statusPalette-n81jC8nU.js";function t(t,n){let r=e(t,n?.in);return r.setHours(23,59,59,999),r}export{t};

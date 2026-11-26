@@ -1,0 +1,1 @@
+var e=typeof navigator<`u`?navigator.userAgent:``,t=/iPhone|iPad|iPod/.test(e)||/Macintosh/.test(e)&&typeof navigator<`u`&&navigator.maxTouchPoints>1,n=t||/Android/.test(e),r=typeof window<`u`&&window.matchMedia?.(`(pointer: coarse)`).matches===!0,i=typeof window<`u`&&`__TAURI_INTERNALS__`in window;export{r as i,n,i as r,t};

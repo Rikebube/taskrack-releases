@@ -1,0 +1,1 @@
+import{M as e,k as t}from"./statusPalette-n81jC8nU.js";function n(n,r){let i=t(n,r?.in),a=i.getFullYear(),o=i.getMonth(),s=e(i,0);return s.setFullYear(a,o+1,0),s.setHours(0,0,0,0),s.getDate()}export{n as t};

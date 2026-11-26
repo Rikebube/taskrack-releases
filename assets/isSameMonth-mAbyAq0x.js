@@ -1,0 +1,1 @@
+import{j as e}from"./statusPalette-n81jC8nU.js";function t(t,n,r){let[i,a]=e(r?.in,t,n);return i.getFullYear()===a.getFullYear()&&i.getMonth()===a.getMonth()}export{t};

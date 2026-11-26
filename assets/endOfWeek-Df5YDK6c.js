@@ -1,0 +1,1 @@
+import{A as e,k as t}from"./statusPalette-n81jC8nU.js";function n(n,r){let i=e(),a=r?.weekStartsOn??r?.locale?.options?.weekStartsOn??i.weekStartsOn??i.locale?.options?.weekStartsOn??0,o=t(n,r?.in),s=o.getDay(),c=(s<a?-7:0)+6-(s-a);return o.setDate(o.getDate()+c),o.setHours(23,59,59,999),o}export{n as t};
